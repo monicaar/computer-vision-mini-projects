@@ -4,9 +4,9 @@ import cv2
 #importing opencv module
 import numpy as np
 input=cv2.imread('./images/1.jpg')
-#for grayscale: input=cv2.imread('./images/1.jpg',0)
+#for grayscale: input=cv2.imread('./imagescv/1.jpg')
 #path to your image
-cv2.imshow()
+cv2.imshow('first',input)
 #opens the image
 cv2.waitKey()
 #waits for key to be entered
