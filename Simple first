@@ -1,14 +1,34 @@
 #author monica
 #run in ipynb files
+
 import cv2
 #importing opencv module
+
 import numpy as np
-input=cv2.imread('./images/1.jpg')
-#for grayscale: input=cv2.imread('./imagescv/1.jpg')
+
+input=cv2.imread('./imagescv/2.jpg')
+#for grayscale: input=cv2.imread('./images/1.jpg',0)
 #path to your image
+
+B , G , R = input[0,0]
+#bgr() value of [0,0] pixel ie first pixel
+
+print (B , G , R)
+
 cv2.imshow('first',input)
 #opens the image
+
+print(input.shape)
+#max rgb values
+
+gray=cv2.imread('./imagescv/2.jpg',0)
+#grayscale image
+
+print (gray.shape)
+#only two-dimensional array because its grayscale
+
 cv2.waitKey()
 #waits for key to be entered
+
 cv2.destroyAllWindows()
 #closes all the windows that are opened
