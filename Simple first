@@ -1,0 +1,13 @@
+#author monica
+#run in ipynb files
+import cv2
+#importing opencv module
+import numpy as np
+input=cv2.imread('./images/1.jpg')
+#path to your image
+cv2.imshow()
+#opens the image
+cv2.waitKey()
+#waits for key to be entered
+cv2.destroyAllWindows(
+#closes all the windows that are opened
